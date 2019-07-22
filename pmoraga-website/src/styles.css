@@ -1,11 +1,16 @@
-/* FONTS */
-
+@import 'https://fonts.googleapis.com/icon?family=Material+Icons';
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
 @import url('https://fonts.googleapis.com/css?family=Capriola&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 .roboto {
     font-family: 'Roboto', sans-serif;
 }
 
 .capriola {
     font-family: 'Capriola', sans-serif;
+}
+
+.open-sans {
+    font-family: 'Open Sans', sans-serif;
 }

@@ -1,7 +1,63 @@
-<body data-spy="scroll" data-target="#scroll-menu" data-offset="100">
+<div class="container-fluid bg-1 text-center open-sans">
+    <h3 class="margin">Who Am I?</h3>
+    <img src="../../../assets/img/circular.png" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="250" height="250">
+    <div>
+        <h1>Pablo Moraga Navas</h1>
+        <h2> Software Engineer</h2>
+    </div>
+</div>
 
-    HOME
+
+<div class="container-fluid bg-grey open-sans">
+    <div class="row">
+        <div class="col-sm-4" style="text-align: center">
+            <i class="fas fa-9x fa-user-alt"></i>
+        </div>
+        <div class="col-sm-8">
+            <h2>Profile</h2>
+            <h4>Recently graduated professional with internship experience in SOFTWARE TESTING, WEB DEVELOPMENT, PROJECT MANAGEMENT and HARDWARE INTEGRATION. Seeking to take the next step in my career with a future oriented perspective, open to new possibilities
+                and career options.
+            </h4>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fluid bg-grey">
+    <h2 class="text-center">CONTACT</h2>
+    <div class="row">
+        <div class="col-sm-5">
+            <p>Contact me</p>
+            <p><span class="glyphicon glyphicon-map-marker"></span> Toledo, SPAIN</p>
+            <p><span class="glyphicon glyphicon-phone"></span> +34 610628216</p>
+            <p><span class="glyphicon glyphicon-envelope"></span> p.moraga.navas@gmail.com</p>
+        </div>
+        <div class="col-sm-7">
+            <form [formGroup]="_sendEmailForm" (submit)="submitEmail()" id="formSendEmail" autocomplete="off">
+
+                <div class="flex-div">
+                    <mat-form-field floatLabel="always" appearance="outline">
+                        <input formControlName="name" matInput placeholder="Name" type="text">
+                    </mat-form-field>
+
+                    <mat-form-field floatLabel="always" appearance="outline">
+                        <input formControlName="email" matInput placeholder="Email" type="email">
+                    </mat-form-field>
+                </div>
+
+                <div class="flex-div-row">
+                    <mat-form-field floatLabel="always" appearance="outline">
+                        <textarea matInput formControlName="comment" placeholder="Comment"></textarea>
+                    </mat-form-field>
+                </div>
 
 
 
-</body>
+
+                <button type="submit" [disabled]="!_sendEmailForm.valid" mat-raised-button>Send</button>
+
+            </form>
+        </div>
+    </div>
+</div>

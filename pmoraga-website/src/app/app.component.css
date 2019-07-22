@@ -1,13 +1,20 @@
-/**** SITE FLEXBOX*****/
-
-.Site {
+.wrapper {
     display: flex;
-    min-height: 100vh;
     flex-direction: column;
+    min-height: 100vh;
 }
 
-.Site-content {
-    flex: 1;
+.wrapper>* {
+    padding: 20px;
+}
+
+.page-main {
+    flex-grow: 1;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -17,7 +24,7 @@ HEADER
 ******/
 
 .navbar-nav li a {
-    color: white;
+    color: black;
 }
 
 .activado {
@@ -29,28 +36,12 @@ HEADER
 }
 
 .nav-link {
-    color: white;
+    color: black;
 }
 
 .navbar-nav li {
     margin-left: 15px;
     margin-right: 15px;
-}
-
-.header {}
-
-.background-image {
-    background: url('../assets/img/nature-header.jpg') no-repeat center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 50vh;
-    /* Add the blur effect */
-    filter: blur(3px);
-    -webkit-filter: blur(3px);
-    -webkit-filter: grayscale(50%);
-    filter: grayscale(50%);
-    /* Full height */
-    height: 100%;
 }
 
 .header .navbar {
@@ -65,9 +56,14 @@ HEADER
     left: 55%;
     transform: translate(-50%, -50%);
     z-index: 2;
-    width: 80%;
+    width: 100%;
     padding: 20px;
     text-align: center;
+}
+
+.page-header {
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -82,4 +78,15 @@ FOOTER
     text-align: center;
     background: rgb(68, 68, 68);
     color: white;
+}
+
+.page-footer {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.page-footer ul {
+    display: flex;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
 }
