@@ -15,7 +15,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ContactComponent } from './components/contact/contact.component';
 import { SpinnerContainer } from './components/about/spinner-container/spinner-container.component';
 import { ResumeComponent } from './components/resume/resume.component';
-
+import { NgxExtendedPdfViewerModule } from 'ngx-extended-pdf-viewer';
+import { EmailDialogComponent } from './components/email-dialog/email-dialog.component';
 
 
 
@@ -27,7 +28,8 @@ import { ResumeComponent } from './components/resume/resume.component';
     AboutComponent,
     ContactComponent,
     SpinnerContainer,
-    ResumeComponent
+    ResumeComponent,
+    EmailDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +39,8 @@ import { ResumeComponent } from './components/resume/resume.component';
     BrowserAnimationsModule,
     FormsModule,
     ReactiveFormsModule,
-    MaterialModule
+    MaterialModule,
+    NgxExtendedPdfViewerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

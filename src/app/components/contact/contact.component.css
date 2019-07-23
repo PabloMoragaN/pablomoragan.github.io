@@ -1,13 +1,29 @@
-.bg-1 {
-    background: url('../../../assets/images/landscape-filtered.jpg') no-repeat center;
-    /* Green */
-    height: 500px;
-    -webkit-font-smoothing: subpixel-antialiased;
-    color: #ffffff;
-    font-family: Arial, Helvetica, sans-serif;
+.bg-grey {
+    background-color: #F0F0F0;
+    /* Dark Blue */
+    color: #000000;
 }
 
 .container-fluid {
     padding-top: 70px;
     padding-bottom: 70px;
+}
+
+.flex-div {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+}
+
+.flex-div>* {
+    margin: 10px;
+    width: 100%;
+}
+
+.flex-div-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }

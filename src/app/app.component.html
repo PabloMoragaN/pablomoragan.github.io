@@ -28,7 +28,7 @@
                             <i class="fab fa-linkedin-in"></i>
                         </a>
                     </li>
-                    <li class="nav-item"><a class="nav-link" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/paablomn/?hl=es"><i class="fab fa-instagram"></i></a> </li>
+                    <li class="nav-item"><a class="nav-link" (click)="openEmailDialog()"><i class="far fa-envelope"></i></a> </li>
                 </ul>
             </div>
         </nav>
@@ -48,6 +48,11 @@
                 <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/paablomn/?hl=es"><i class="fab fa-twitter"></i></a>
                 <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/paablomn/?hl=es"> <i class="fab fa-facebook-f"></i></a>
                 <a target="_blank" rel="noopener noreferrer" href="https://github.com/PabloMoragaN"><i class="fab fa-github"></i></a>
+                <a (click)="openEmailDialog()"><i class="fas fa-envelope"></i></a>
+
+
+
+
             </div>
         </div>
         <label class="roboto">©2019 Pablo Moraga Navas. All rights reserved.</label>

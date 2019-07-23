@@ -55,6 +55,19 @@
 }
 
 
+/********/
+
+.bg-resume-pdf {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    background-color: #F0F0F0;
+    color: #1A1A1A;
+}
+
+
 /******/
 
 .example-h2 {
