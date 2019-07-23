@@ -114,3 +114,28 @@ FOOTER
 .social-media-buttons a i:hover {
     color: #007bff;
 }
+
+.nav-footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+  }
+
+  .nav-footer>*{
+      color:white;
+      font-weight: bold;
+      font-size: 15px;
+      margin: 20px;
+  }
+  
+.nav-footer a{
+    -webkit-font-smoothing: subpixel-antialiased;
+
+    text-decoration: none;
+}
+
+  .nav-footer a:hover{
+      color: #007bff;
+  }
+
