@@ -1,0 +1,21 @@
+.container-fluid {
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.flex-div-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .flex-div-row{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .flex-div-row>*{
+margin: 20px;
+width: 100%;
+
+  }

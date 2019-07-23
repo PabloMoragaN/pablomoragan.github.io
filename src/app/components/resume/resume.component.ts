@@ -7,7 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ResumeComponent implements OnInit {
 
-  constructor(){}
+  public resumeShow = false;
+
+
+  constructor() { }
+
 
   spinnerValue(value) {
     return value + "%";

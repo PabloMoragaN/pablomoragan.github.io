@@ -43,6 +43,7 @@ import { EmailDialogComponent } from './components/email-dialog/email-dialog.com
     NgxExtendedPdfViewerModule
   ],
   providers: [],
+  entryComponents:[EmailDialogComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

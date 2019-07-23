@@ -11,22 +11,26 @@
             <div>
                 <div class="skill">
                     <label> JavaScript</label>
-                    <spinner-container diameter="60" strokeWidth="5" value="60" [displayWith]="spinnerValue"></spinner-container>
+                    <spinner-container diameter="60" strokeWidth="5" value="60" [displayWith]="spinnerValue">
+                    </spinner-container>
                 </div>
 
                 <div class="skill">
                     <label> Node.js</label>
-                    <spinner-container diameter="60" strokeWidth="5" value="60" [displayWith]="spinnerValue"></spinner-container>
+                    <spinner-container diameter="60" strokeWidth="5" value="60" [displayWith]="spinnerValue">
+                    </spinner-container>
                 </div>
 
                 <div class="skill">
                     <label> Angular</label>
-                    <spinner-container diameter="60" strokeWidth="5" value="60" [displayWith]="spinnerValue"></spinner-container>
+                    <spinner-container diameter="60" strokeWidth="5" value="60" [displayWith]="spinnerValue">
+                    </spinner-container>
                 </div>
 
                 <div class="skill">
                     <label> Unix & Linux</label>
-                    <spinner-container diameter="60" strokeWidth="5" value="65" [displayWith]="spinnerValue"></spinner-container>
+                    <spinner-container diameter="60" strokeWidth="5" value="65" [displayWith]="spinnerValue">
+                    </spinner-container>
                 </div>
             </div>
 
@@ -34,16 +38,19 @@
             <div>
                 <div class="skill">
                     <label> Java</label>
-                    <spinner-container diameter="60" strokeWidth="5" value="60" [displayWith]="spinnerValue"></spinner-container>
+                    <spinner-container diameter="60" strokeWidth="5" value="60" [displayWith]="spinnerValue">
+                    </spinner-container>
                 </div>
 
                 <div class="skill">
                     <label> Scrum</label>
-                    <spinner-container diameter="60" strokeWidth="5" value="80" [displayWith]="spinnerValue"></spinner-container>
+                    <spinner-container diameter="60" strokeWidth="5" value="80" [displayWith]="spinnerValue">
+                    </spinner-container>
                 </div>
                 <div class="skill">
                     <label>Software / Hardware QA</label>
-                    <spinner-container diameter="60" strokeWidth="5" value="70" [displayWith]="spinnerValue"></spinner-container>
+                    <spinner-container diameter="60" strokeWidth="5" value="70" [displayWith]="spinnerValue">
+                    </spinner-container>
                 </div>
             </div>
 
@@ -52,16 +59,98 @@
     </div>
 </section>
 
-<div>
-    <ngx-extended-pdf-viewer [src]="'../../../assets/files/PabloMoragaNavas-CV.pdf'" useBrowserLocale="true" height="100vh">
-    </ngx-extended-pdf-viewer>
+
+
+
+
+
+
+
+<section class="merriweather bg-work-experience">
+
+    <div>
+        <h2>Work Experience</h2>
+    </div>
+
+    <div class="flex-div-row">
+        <div>
+            <label style="font-weight: bold; color: #007bff;"> QA SOFTWARE TESTING ENGINEER INTERN</label>
+            <br>
+            <label> February 2019 - August 2019</label>
+            <br>
+            <label><strong>Zennio Avance y Tecnología S.L. Toledo, Spain</strong></label>
+
+            <ul>
+                <li>Design test cases and suites for hardware software mixed
+                    systems.</li>
+                <li>Execution of test suites to determine the validity and quality
+                    of a software application.</li>
+                <li>Designed, implemented and tested a Raspberry Pi distributed
+                    system and management web application for <br> building
+                    complex domotic virtual hotel integrations.
+                    Ultimate goal isreplacing expensive physical domotic devices in testing
+                    environments.</li>
+                <li>Management app is formed by an Angular based client and a
+                    Node.js server used by the company in order <br>to configure and
+                    build virtual hotel integrations.</li>
+            </ul>
+
+        </div>
+
+        <div>
+            <label style="font-weight: bold; color: #007bff;"> MY NEXT STEP ...</label>
+            <br>
+
+
+        </div>
+
+    </div>
+</section>
+
+
+<section class="merriweather bg-education">
+
+    <div>
+        <h2>Education</h2>
+    </div>
+
+    <div class="flex-div-row">
+        <div>
+            <label style="font-weight: bold; color: #1A1A1A"> Bachelor
+                Degree of Computer Science Software Enineering</label>
+            <br>
+            <label> 2014 - 2019</label>
+            <br>
+            <label><strong>Universidad de Castilla La Mancha, Spain</strong></label>
+            <br>
+
+            <label>Relevant Coursework:</label>
+            <ul>
+                <li>Project Management, Quality Control, Information Systems
+                    Processes and Security, <br> Databases Design and Development,
+                    Software Engineering Design and Development Processes,
+                    Web Development.</li>
+
+            </ul>
+
+        </div>
+
+
+
+    </div>
+</section>
+s
+<div class="row">
+    <button *ngIf="!resumeShow" class="button-CV" type="button" (click)="resumeShow=true" mat-raised-button> Show my Resume</button>
+    <button *ngIf="resumeShow" class="button-CV" type="button" (click)="resumeShow=false" mat-raised-button> Hide my Resume</button>
 </div>
 
 
-<section class="merriweather bg-tech-skills">
+<section *ngIf="resumeShow">
 
-    <label>YEET</label>
-    <label>YEET</label>
-
-
+    <div>
+        <ngx-extended-pdf-viewer [src]="'../../../assets/files/PabloMoragaNavas-CV.pdf'" useBrowserLocale="true"
+            width="60vh" height="100vh">
+        </ngx-extended-pdf-viewer>
+    </div>
 </section>

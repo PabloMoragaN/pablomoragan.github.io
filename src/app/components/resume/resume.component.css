@@ -81,3 +81,68 @@
 .example-h2 .spinner-examples .spinner-container {
     margin-right: 24px;
 }
+
+/*******/
+
+
+.bg-work-experience {
+    background-color: #F0F0F0;
+    color: #1A1A1A;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: stretch;
+        align-content: stretch;
+    -webkit-font-smoothing: subpixel-antialiased;
+
+    }
+
+    .bg-work-experience>*{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .flex-div-row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .flex-div-row>*{
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+    }
+
+    /****/
+
+
+    .bg-education{
+        background-color: white;
+    color: #1A1A1A;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: stretch;
+        align-content: stretch;
+    -webkit-font-smoothing: subpixel-antialiased;
+
+    }
+
+    .bg-education>*{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .button-CV{
+        font-size: 20px;
+        width: 30%;
+        text-align: center;
+    }
+    
+
+    .button-CV:hover {
+        color: #007bff;
+    }
