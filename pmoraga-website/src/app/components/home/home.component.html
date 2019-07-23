@@ -38,17 +38,17 @@
             <form [formGroup]="_sendEmailForm" (submit)="submitEmail()" id="formSendEmail" autocomplete="off">
 
                 <div class="flex-div">
-                    <mat-form-field floatLabel="always" appearance="outline">
+                    <mat-form-field floatLabel="always">
                         <input formControlName="name" matInput placeholder="Name" type="text">
                     </mat-form-field>
 
-                    <mat-form-field floatLabel="always" appearance="outline">
+                    <mat-form-field floatLabel="always">
                         <input formControlName="email" matInput placeholder="Email" type="email">
                     </mat-form-field>
                 </div>
 
                 <div class="flex-div-row">
-                    <mat-form-field floatLabel="always" appearance="outline">
+                    <mat-form-field floatLabel="always">
                         <textarea matInput formControlName="comment" placeholder="Comment"></textarea>
                     </mat-form-field>
                 </div>

@@ -81,9 +81,9 @@ p {
 }
 
 .bg-grey {
-    background-color: #b2b3b8;
+    background-color: #d1d1d3;
     /* Dark Blue */
-    color: #ffffff;
+    color: #000000;
 }
 
 .container-fluid {
@@ -108,9 +108,4 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-mat-form-field {
-    background: white;
-    color: black;
 }

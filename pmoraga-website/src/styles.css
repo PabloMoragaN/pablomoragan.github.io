@@ -14,3 +14,31 @@
 .open-sans {
     font-family: 'Open Sans', sans-serif;
 }
+
+
+/****
+
+INPUT
+
+
+***/
+
+.mat-form-field-label {
+    color: black !important;
+}
+
+.mat-form-field-underline {
+    background-color: black !important;
+}
+
+.mat-form-field-ripple {
+    background-color: transparent !important;
+}
+
+.mat-select-arrow {
+    color: #007bff !important;
+}
+
+.mat-option:hover {
+    color: #007bff;
+}
