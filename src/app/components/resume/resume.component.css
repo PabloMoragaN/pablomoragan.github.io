@@ -1,0 +1,70 @@
+.bg-tech-skills {
+    height: 500px;
+    text-align: center;
+    background-color: white;
+    color: #1A1A1A;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.technical-skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.technical-skills>* {
+    margin: 20px;
+}
+
+.skill {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
+.skill>* {
+    margin: 30px;
+}
+
+.skill .label {
+    font-size: 12px;
+}
+
+
+/*******/
+
+.flex-div {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+}
+
+.flex-div>* {
+    margin: 10px;
+    width: 100%;
+}
+
+
+/******/
+
+.example-h2 {
+    margin: 24px 0;
+}
+
+.example-h2 .spinner-examples {
+    display: flex;
+}
+
+.example-h2 .spinner-examples .spinner-container {
+    margin-right: 24px;
+}

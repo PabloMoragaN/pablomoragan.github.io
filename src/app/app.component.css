@@ -5,7 +5,7 @@
 }
 
 .wrapper>* {
-    padding: 20px;
+    padding: 5px;
 }
 
 .page-main {
@@ -73,20 +73,44 @@ FOOTER
 
 ******/
 
-.Footer {
+.page-footer {
     font-size: 12px;
     text-align: center;
-    background: rgb(68, 68, 68);
+    background: #1A1A1A;
     color: white;
+    display: flex;
+    flex-direction: column;
 }
 
-.page-footer {
-    display: flex;
-    flex-direction: column-reverse;
+.page-footer>* {
+    margin-top: 10px;
 }
 
 .page-footer ul {
     display: flex;
     font-size: 1.5rem;
     margin-bottom: 5px;
+}
+
+.flex-div-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.social-media-buttons {
+    display: inline-block;
+    font-size: 25px;
+}
+
+.social-media-buttons>* {
+    margin: 10px;
+}
+
+.social-media-buttons a i {
+    color: white;
+}
+
+.social-media-buttons a i:hover {
+    color: #007bff;
 }

@@ -16,20 +16,6 @@ MAIN
 
 /* variables */
 
-.page-main {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    min-height: 350px;
-    position: relative;
-    background: url('../../../assets/img/nature-header.jpg') no-repeat center;
-    filter: blur(3px);
-    -webkit-filter: blur(3px);
-    -webkit-filter: grayscale(50%);
-    filter: grayscale(50%);
-}
-
 .second-section {
     height: 600px;
     display: flex;
@@ -53,11 +39,7 @@ p {
 }
 
 .bg-1 {
-    background: url('../../../assets/img/nature-header.jpg') no-repeat center;
-    filter: blur(3px);
-    -webkit-filter: blur(3px);
-    -webkit-filter: grayscale(50%);
-    filter: grayscale(50%);
+    background: url('../../../assets/images/nature-header-filtered.jpg') no-repeat center;
     /* Green */
     color: #ffffff;
 }

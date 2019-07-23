@@ -1,3 +1,145 @@
-.info-div {
-    color: white;
+.bg-1 {
+    background: url('../../../assets/images/landscape-filtered.jpg') no-repeat center;
+    color: #ffffff;
+}
+
+.container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.h1-font {
+    font-size: 82px;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.flex-div {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+}
+
+.flex-div>* {
+    margin: 10px;
+    width: 100%;
+}
+
+.flex-div-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bg-social-media {
+    background-color: #F0F0F0;
+    height: 500px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
+.bg-skills {
+    height: 500px;
+    text-align: center;
+    background-color: white;
+    color: #1A1A1A;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.social-media-buttons {
+    display: inline-block;
+    font-size: 35px;
+}
+
+.social-media-buttons>* {
+    margin: 10px;
+}
+
+.social-media-buttons a i {
+    color: #1A1A1A;
+}
+
+.social-media-buttons a i:hover {
+    color: #007bff;
+}
+
+.bg-location {
+    height: 700px;
+    background-color: #F0F0F0;
+    color: #1A1A1A;
+    -webkit-font-smoothing: subpixel-antialiased;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
+.bg-resume {
+    height: 500px;
+    -webkit-font-smoothing: subpixel-antialiased;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    color: #1A1A1A;
+}
+
+.technical-skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.technical-skills>* {
+    margin: 20px;
+}
+
+
+/******/
+
+.example-h2 {
+    margin: 24px 0;
+}
+
+.example-h2 .spinner-examples {
+    display: flex;
+}
+
+.example-h2 .spinner-examples .spinner-container {
+    margin-right: 24px;
+}
+
+.skill {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
+.skill>* {
+    margin: 30px;
+}
+
+.skill .label {
+    font-size: 12px;
+}
+
+.button-CV:hover {
+    color: #007bff;
 }
