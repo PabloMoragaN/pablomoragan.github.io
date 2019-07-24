@@ -19,7 +19,6 @@ export class AppComponent implements OnInit {
   }
 
 
-
    openEmailDialog() : void {
     const dialogRef = this.dialog.open(EmailDialogComponent, {
       data: {}

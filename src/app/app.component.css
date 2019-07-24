@@ -46,9 +46,6 @@ HEADER
 
 .header .navbar {
     background-color: transparent !important;
-    background-color: rgb(0, 0, 0);
-    /* Fallback color */
-    background-color: rgba(0, 0, 0, 0.4);
     /* Black w/opacity/see-through */
     color: white;
     position: absolute;
@@ -115,27 +112,25 @@ FOOTER
     color: #007bff;
 }
 
-.nav-footer{
+.nav-footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
     align-content: center;
-  }
+}
 
-  .nav-footer>*{
-      color:white;
-      font-weight: bold;
-      font-size: 15px;
-      margin: 20px;
-  }
-  
-.nav-footer a{
+.nav-footer>* {
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    margin: 20px;
+}
+
+.nav-footer a {
     -webkit-font-smoothing: subpixel-antialiased;
-
     text-decoration: none;
 }
 
-  .nav-footer a:hover{
-      color: #007bff;
-  }
-
+.nav-footer a:hover {
+    color: #007bff;
+}

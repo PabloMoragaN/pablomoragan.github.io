@@ -40,8 +40,18 @@ p {
 
 .bg-1 {
     background: url('../../../assets/images/nature-header-filtered.jpg') no-repeat center;
+    background-size: cover;
     /* Green */
     color: #ffffff;
+}
+
+.masthead {
+    height: 100vh;
+    min-height: 500px;
+    background-image: url('../../../assets/images/home/masthead-home.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .bg-2 {
