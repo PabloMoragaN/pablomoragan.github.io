@@ -35,7 +35,7 @@
 }
 
 .bg-social-media {
-    background-color: white;
+    background-color: #F0F0F0;
     height: 500px;
     text-align: center;
     display: flex;
@@ -60,19 +60,6 @@
 
 .social-media-buttons a i:hover {
     color: #007bff;
-}
-
-.bg-location {
-    height: 700px;
-    background-color: #F0F0F0;
-    color: #1A1A1A;
-    -webkit-font-smoothing: subpixel-antialiased;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: stretch;
-    align-content: stretch;
 }
 
 .bg-resume {
@@ -151,4 +138,38 @@
     align-content: center;
     margin-top: 10%;
     margin-left: 5%;
+}
+
+.h4 .label {
+    margin-top: 10px;
+}
+
+.bg-location {
+    background-color: #F0F0F0;
+    color: #1A1A1A;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.bg-location>* {
+    margin: 40px;
+}
+
+.bg-spotify {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    min-height: 500px;
+    background-color: white;
+    height: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
 }

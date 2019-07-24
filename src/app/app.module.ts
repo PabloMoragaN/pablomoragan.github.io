@@ -18,6 +18,7 @@ import { ResumeComponent } from './components/resume/resume.component';
 import { NgxExtendedPdfViewerModule } from 'ngx-extended-pdf-viewer';
 import { EmailDialogComponent } from './components/email-dialog/email-dialog.component';
 import { ResumePdfDialogComponent } from './components/resume/resume-pdf-dialog/resume-pdf-dialog.component';
+import { PortfolioComponent } from './components/portfolio/portfolio.component';
 
 
 
@@ -31,7 +32,8 @@ import { ResumePdfDialogComponent } from './components/resume/resume-pdf-dialog/
     SpinnerContainer,
     ResumeComponent,
     EmailDialogComponent,
-    ResumePdfDialogComponent
+    ResumePdfDialogComponent,
+    PortfolioComponent
   ],
   imports: [
     BrowserModule,
