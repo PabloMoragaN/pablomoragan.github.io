@@ -38,13 +38,6 @@ p {
     margin-bottom: 45px;
 }
 
-.bg-1 {
-    background: url('../../../assets/images/nature-header-filtered.jpg') no-repeat center;
-    background-size: cover;
-    /* Green */
-    color: #ffffff;
-}
-
 .masthead {
     height: 100vh;
     min-height: 500px;
@@ -52,6 +45,7 @@ p {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    overflow: visible;
 }
 
 .bg-2 {

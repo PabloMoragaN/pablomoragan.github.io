@@ -1,7 +1,7 @@
 .bg-grey {
     background-color: #F0F0F0;
     /* Dark Blue */
-    color: #000000;
+    color: #1A1A1A;
 }
 
 .container-fluid {
@@ -25,5 +25,86 @@
 .flex-div-row {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+}
+
+
+/******/
+
+.masthead {
+    height: 100vh;
+    min-height: 500px;
+    background-image: url('../../../assets/images/contact/masthead-contact.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: visible;
+}
+
+.masthead-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    align-content: center;
+    margin-top: 10%;
+    margin-left: 5%;
+}
+
+.container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.h1-font {
+    font-size: 100px;
+    color: #1A1A1A;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.h2-font {
+    font-size: 60px;
+    color: #1A1A1A;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.h1-card-font {
+    font-size: 50px;
+    color: #1A1A1A;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.h2-card-font {
+    font-size: 30px;
+    color: #1A1A1A;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.bg-contact {
+    height: 500px;
+    background-color: #F0F0F0;
+    -webkit-font-smoothing: subpixel-antialiased;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    color: #1A1A1A;
+}
+
+.example-card {
+    border: 1px solid #1A1A1A;
+    text-align: center;
+    border-radius: 0px;
+}
+
+.mat-button {
+    color: #007bff;
+}
+
+.mat-card-title {
+    display: flex;
+    flex-direction: row;
     justify-content: center;
 }

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ResumePdfDialogComponent } from './resume-pdf-dialog/resume-pdf-dialog.component';
+import { MatDialog } from '@angular/material';
 
 @Component({
   selector: 'resume',
@@ -10,7 +12,7 @@ export class ResumeComponent implements OnInit {
   public resumeShow = false;
 
 
-  constructor() { }
+  constructor(public dialog: MatDialog) { }
 
 
   spinnerValue(value) {
@@ -20,4 +22,15 @@ export class ResumeComponent implements OnInit {
   ngOnInit() {
   }
 
+
+  openResumePdfDialog() : void {
+    const dialogRef = this.dialog.open(ResumePdfDialogComponent, {
+      data: {}
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+     
+    });
+
+  }
 }

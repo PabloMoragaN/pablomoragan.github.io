@@ -1,3 +1,59 @@
+<div class="container-fluid text-center masthead merriweather">
+    <div class="masthead-column">
+        <h1 class="margin h1-font">My Resume</h1>
+        <h2 class="margin h2-font">Get to know me as a professional</h2>
+
+        <div class="flex-div" style="margin-top: 40px; margin-left: 10%">
+            <button mat-raised-button>Download my Resume <i style="margin: 5px" class="fas fa-file-download"></i> </button>
+            <button mat-raised-button (click)="openResumePdfDialog()">Show my Resume <i style="margin: 5px" class="fas fa-long-arrow-alt-right"></i> </button>
+        </div>
+    </div>
+</div>
+
+<section class="merriweather bg-skills">
+
+    <div class="flex-div">
+        <div>
+            <h2>Skills</h2>
+        </div>
+
+        <div class="technical-skills">
+
+            <!---Skill column--->
+            <div>
+                <div class="skill">
+                    <label>Spanish</label>
+                    <spinner-container diameter="60" strokeWidth="5" value="100" [displayWith]="spinnerValue"></spinner-container>
+                </div>
+
+                <div class="skill">
+                    <label>English</label>
+                    <spinner-container diameter="60" strokeWidth="5" value="85" [displayWith]="spinnerValue"></spinner-container>
+                </div>
+
+
+            </div>
+
+            <!---Skill column--->
+            <div>
+                <div class="skill">
+                    <label> Software / Hardware QA</label>
+                    <spinner-container diameter="60" strokeWidth="5" value="60" [displayWith]="spinnerValue"></spinner-container>
+                </div>
+
+                <div class="skill">
+                    <label> Web Development</label>
+                    <spinner-container diameter="60" strokeWidth="5" value="65" [displayWith]="spinnerValue"></spinner-container>
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
 <section class="merriweather bg-tech-skills">
 
     <div class="flex-div">
@@ -80,18 +136,12 @@
             <label><strong>Zennio Avance y Tecnología S.L. Toledo, Spain</strong></label>
 
             <ul>
-                <li>Design test cases and suites for hardware software mixed
-                    systems.</li>
-                <li>Execution of test suites to determine the validity and quality
-                    of a software application.</li>
-                <li>Designed, implemented and tested a Raspberry Pi distributed
-                    system and management web application for <br> building
-                    complex domotic virtual hotel integrations.
-                    Ultimate goal isreplacing expensive physical domotic devices in testing
-                    environments.</li>
-                <li>Management app is formed by an Angular based client and a
-                    Node.js server used by the company in order <br>to configure and
-                    build virtual hotel integrations.</li>
+                <li>Design test cases and suites for hardware software mixed systems.
+                </li>
+                <li>Execution of test suites to determine the validity and quality of a software application.</li>
+                <li>Designed, implemented and tested a Raspberry Pi distributed system and management web application for <br> building complex domotic virtual hotel integrations. Ultimate goal isreplacing expensive physical domotic devices in testing environments.
+                </li>
+                <li>Management app is formed by an Angular based client and a Node.js server used by the company in order <br>to configure and build virtual hotel integrations.</li>
             </ul>
 
         </div>
@@ -116,7 +166,7 @@
     <div class="flex-div-row">
         <div>
             <label style="font-weight: bold; color: #1A1A1A"> Bachelor
-                Degree of Computer Science Software Enineering</label>
+                Degree of Computer Science  - Specialization of Software Enineering</label>
             <br>
             <label> 2014 - 2019</label>
             <br>
@@ -125,10 +175,7 @@
 
             <label>Relevant Coursework:</label>
             <ul>
-                <li>Project Management, Quality Control, Information Systems
-                    Processes and Security, <br> Databases Design and Development,
-                    Software Engineering Design and Development Processes,
-                    Web Development.</li>
+                <li>Project Management, Quality Control, Information Systems Processes and Security, <br> Databases Design and Development, Software Engineering Design and Development Processes, Web Development.</li>
 
             </ul>
 
@@ -139,46 +186,25 @@
     </div>
 </section>
 
-<div style="text-align: center">
-    <button *ngIf="!resumeShow" class="button-CV" type="button" (click)="resumeShow=true" mat-raised-button> Show my
-        Resume</button>
-    <button *ngIf="resumeShow" class="button-CV" type="button" (click)="resumeShow=false" mat-raised-button> Hide my
-        Resume</button>
+<div class="merriweather" style="text-align: center;">
+    <hr>
+
+    <label><i>This webpage is entirely made by me from scracth using Angular 8.</i></label>
+    <br>
+    <a class="btn btn-primary" target="_blank" rel="noopener noreferrer" href="https://github.com/PabloMoragaN/pmoraga-website"> Look up this project
+            <i style="margin: 5px" class="fab fa-github"></i>
+        </a>
+
 </div>
 
-
-<section *ngIf="resumeShow">
-
-    <div>
-        <ngx-extended-pdf-viewer [src]="'../../../assets/files/PabloMoragaNavas-CV.pdf'" useBrowserLocale="true"
-            width="60vh" height="100vh">
-        </ngx-extended-pdf-viewer>
-    </div>
-</section>
+<div class="merriweather" style="text-align: center; margin-top: 15px;">
 
 
-<div class="merriweather" style="text-align: center;">
-        <hr>
-    
-        <label><i>This webpage is entirely made by me from scracth using Angular 8.</i></label>
-        <br>
-        <a class="btn btn-primary" target="_blank" rel="noopener noreferrer"
-            href="https://github.com/PabloMoragaN/pmoraga-website"> Look up this project
-            <i style="margin: 5px" class="fab fa-github"></i>
-        </a>
-    
-    </div>
-    
-    <div class="merriweather" style="text-align: center; margin-top: 15px;">
-    
-    
-        <label><i>This server in charge on contact/email sending is also made by me using Express.js and
+    <label><i>This server in charge on contact/email sending is also made by me using Express.js and
                 Node.js.</i></label>
-        <br>
-        <a class="btn btn-primary" target="_blank" rel="noopener noreferrer"
-            href="https://github.com/PabloMoragaN/pmoraga-website"> Look up this project
+    <br>
+    <a class="btn btn-primary" target="_blank" rel="noopener noreferrer" href="https://github.com/PabloMoragaN/pmoraga-website"> Look up this project
             <i style="margin: 5px" class="fab fa-github"></i>
         </a>
-        <hr>
-    </div>
-    
+    <hr>
+</div>

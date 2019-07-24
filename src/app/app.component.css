@@ -4,9 +4,10 @@
     min-height: 100vh;
 }
 
-.wrapper>* {
+
+/*.wrapper>* {
     padding: 5px;
-}
+}*/
 
 .page-main {
     flex-grow: 1;

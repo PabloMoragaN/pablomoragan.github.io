@@ -1,0 +1,16 @@
+<h1 mat-dialog-title>MY RESUME</h1>
+
+
+
+<div mat-dialog-content>
+
+    <ngx-extended-pdf-viewer [src]="'../../../assets/files/PabloMoragaNavas-CV.pdf'" useBrowserLocale="true" height="60vh">
+    </ngx-extended-pdf-viewer>
+
+
+
+</div>
+<div mat-dialog-actions>
+    <button type="button" mat-button (click)="closeDialog()">Close</button>
+
+</div>

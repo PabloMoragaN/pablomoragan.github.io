@@ -1,15 +1,17 @@
-.bg-1 {
-    background: url('../../../assets/images/landscape-filtered.jpg') no-repeat center;
-    color: #ffffff;
-}
-
 .container-fluid {
     padding-top: 70px;
     padding-bottom: 70px;
 }
 
 .h1-font {
-    font-size: 82px;
+    font-size: 100px;
+    color: white;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.h2-font {
+    font-size: 80px;
+    color: white;
     -webkit-font-smoothing: subpixel-antialiased;
 }
 
@@ -33,7 +35,7 @@
 }
 
 .bg-social-media {
-    background-color: #F0F0F0;
+    background-color: white;
     height: 500px;
     text-align: center;
     display: flex;
@@ -41,19 +43,6 @@
     justify-content: space-around;
     align-items: center;
     align-content: center;
-}
-
-.bg-skills {
-    height: 500px;
-    text-align: center;
-    background-color: white;
-    color: #1A1A1A;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    align-content: center;
-    -webkit-font-smoothing: subpixel-antialiased;
 }
 
 .social-media-buttons {
@@ -140,7 +129,26 @@
     font-size: 12px;
 }
 
-
 .button-CV:hover {
     color: #007bff;
+}
+
+.masthead {
+    height: 100vh;
+    min-height: 500px;
+    background-image: url('../../../assets/images/about/masthead-about.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: visible;
+}
+
+.masthead-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    align-content: center;
+    margin-top: 10%;
+    margin-left: 5%;
 }

@@ -82,67 +82,116 @@
     margin-right: 24px;
 }
 
-/*******/
 
+/*******/
 
 .bg-work-experience {
     background-color: #F0F0F0;
     color: #1A1A1A;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-around;
-        align-items: stretch;
-        align-content: stretch;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: stretch;
+    align-content: stretch;
     -webkit-font-smoothing: subpixel-antialiased;
+}
 
-    }
+.bg-work-experience>* {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
 
-    .bg-work-experience>*{
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
+.flex-div-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
-    .flex-div-row {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .flex-div-row>*{
-        margin-top: 20px;
-        margin-bottom: 20px;
-
-    }
-
-    /****/
+.flex-div-row>* {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 
 
-    .bg-education{
-        background-color: white;
+/****/
+
+.bg-education {
+    background-color: white;
     color: #1A1A1A;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-around;
-        align-items: stretch;
-        align-content: stretch;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: stretch;
+    align-content: stretch;
     -webkit-font-smoothing: subpixel-antialiased;
+}
 
-    }
+.bg-education>* {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
 
-    .bg-education>*{
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
+.button-CV {
+    font-size: 20px;
+    width: 30%;
+    text-align: center;
+}
 
-    .button-CV{
-        font-size: 20px;
-        width: 30%;
-        text-align: center;
-    }
-    
+.button-CV:hover {
+    color: #007bff;
+}
 
-    .button-CV:hover {
-        color: #007bff;
-    }
+
+/******/
+
+.masthead {
+    height: 100vh;
+    min-height: 500px;
+    background-image: url('../../../assets/images/resume/masthead-resume.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: visible;
+}
+
+.masthead-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    align-content: center;
+    margin-top: 10%;
+    margin-left: 5%;
+}
+
+.container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.h1-font {
+    font-size: 100px;
+    color: white;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.h2-font {
+    font-size: 80px;
+    color: white;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.bg-skills {
+    height: 500px;
+    text-align: center;
+    background-color: #F0F0F0;
+    color: #1A1A1A;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    -webkit-font-smoothing: subpixel-antialiased;
+}

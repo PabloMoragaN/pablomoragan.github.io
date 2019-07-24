@@ -1,0 +1,9 @@
+.container-fluid {
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.mat-dialog-content {
+    width: 100vh;
+    height: 60vh;
+}
