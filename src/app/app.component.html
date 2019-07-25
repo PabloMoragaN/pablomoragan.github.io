@@ -6,7 +6,7 @@
             </button>
             <a routerLink="/home"><img height="50px" src="../assets/images/logo.png"></a>
             <div class="navbar-collapse collapse justify-content-between align-items-center w-100" id="collapsingNavbar2">
-                <ul class="navbar-nav mx-auto text-md-center text-left">
+                <ul class="navbar-nav navbar-center mx-auto text-center text-left">
 
 
                     <li class="nav-item">
@@ -29,13 +29,7 @@
 
                 <ul class="nav navbar-nav flex-row justify-content-md-center justify-content-start flex-nowrap">
 
-                    <!--<li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" id="dropdown09" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="flag-icon flag-icon-gb"> </span></a>
-                        <div class="dropdown-menu" aria-labelledby="dropdown09">
-                            <a class="dropdown-item" href="#gb"><span class="flag-icon flag-icon-gb"> </span> </a>
-                            <a class="dropdown-item" href="#es"><span class="flag-icon flag-icon-es"> </span>  </a>
-                        </div>
-                    </li>-->
+
 
                     <li class="nav-item">
                         <a class="nav-link" target="_blank" rel="noopener noreferrer" href="http://linkedin.com/in/pablo-moraga-navas-4747b7155">
@@ -106,3 +100,40 @@
     </footer>
 
 </div>
+
+<!--<li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="dropdown09" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="flag-icon flag-icon-gb"> </span></a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown09">
+                            <a class="dropdown-item" href="#gb"><span class="flag-icon flag-icon-gb"> </span> </a>
+                            <a class="dropdown-item" href="#es"><span class="flag-icon flag-icon-es"> </span>  </a>
+                        </div>
+                    </li>-->
+
+<!--flex-row justify-content-md-center justify-content-start flex-nowrap-->
+
+
+
+<!-----
+
+<ul class="nav flex-row justify-content-md-center justify-content-start flex-nowrap">
+
+
+                    <li class="nav-item">
+
+                        <mat-form-field>
+                            <mat-select [(value)]="language" (selectionChange)="selectLanguage($event)">
+                                <mat-select-trigger>
+                                    <i *ngIf="language==='english'" class="flag-icon flag-icon-gb"> </i>
+                                    <i *ngIf="language==='spanish'" class="flag-icon flag-icon-es"> </i>
+
+                                </mat-select-trigger>
+                                <mat-option value="english"><i class="flag-icon flag-icon-gb"></i> ENG</mat-option>
+                                <mat-option value="spanish"><i class="flag-icon flag-icon-es"></i> ES</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+
+
+                    </li>
+                </ul>
+
+-->
