@@ -1,0 +1,175 @@
+    .flex-div {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        align-content: center;
+        align-items: center;
+    }
+    
+    .flex-div>* {
+        margin: 10px;
+        width: 100%;
+    }
+    
+    .container-fluid {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+    
+    .masthead {
+        height: 100vh;
+        min-height: 500px;
+        background-image: url('../../../assets/images/portfolio/masthead-portfolio.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        overflow: visible;
+    }
+    
+    .masthead-column {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: baseline;
+        align-content: center;
+        margin-top: 10%;
+        margin-left: 5%;
+    }
+    
+    .h1-font {
+        font-size: 100px;
+        color: white;
+        -webkit-font-smoothing: subpixel-antialiased;
+    }
+    
+    .h2-font {
+        font-size: 80px;
+        color: white;
+        -webkit-font-smoothing: subpixel-antialiased;
+    }
+    
+    .bg-portfolio-text {
+        height: 500px;
+        -webkit-font-smoothing: subpixel-antialiased;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;
+        color: #1A1A1A;
+    }
+    /****PROJECTS*****/
+    
+    .bg-projects {
+        height: 500px;
+        background-color: #F0F0F0;
+        -webkit-font-smoothing: subpixel-antialiased;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;
+        color: #1A1A1A;
+    }
+    
+    .mat-button {
+        color: #007bff;
+        border: 1px solid #1A1A1A;
+        margin: 10px;
+    }
+    
+    .h1-card-font {
+        font-size: 50px;
+        color: #1A1A1A;
+        -webkit-font-smoothing: subpixel-antialiased;
+    }
+    
+    .h2-card-font {
+        font-size: 30px;
+        color: #1A1A1A;
+        -webkit-font-smoothing: subpixel-antialiased;
+    }
+    
+    .image-caption-wrapper {
+        opacity: 0;
+        visibility: hidden;
+    }
+    
+    .mat-card {
+        font-family: 'Merriweather', serif;
+        height: 300px;
+        width: 300px;
+    }
+    
+    .mat-card:hover .image-caption-wrapper {
+        opacity: 1;
+        transition: opacity .2s ease-in;
+        visibility: visible;
+    }
+    /****
+
+
+
+.container {
+    position: relative;
+    text-align: center;
+}
+
+.container:hover .centered {
+    filter: brightness(20%);
+}
+
+
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+****/
+    /******/
+    
+    .inner-image {
+        max-height: 300px;
+        max-width: 300px;
+    }
+    
+    #container {
+        height: 300px;
+        width: 300px;
+        position: relative;
+        text-align: center;
+    }
+    
+    #container:hover .inner-image {
+        filter: none;
+        -webkit-filter: grayscale(100%);
+        -moz-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+        -o-filter: grayscale(100%);
+        opacity: 0.4;
+        cursor: pointer;
+        /*  opacity: 0.4;
+        filter: brightness(0%);
+        filter: blur(5px);*/
+    }
+    
+    #image {
+        position: absolute;
+        margin: 0 auto;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        top: 0;
+    }
+    
+    #text {
+        z-index: 100;
+        position: absolute;
+        font-weight: bold;
+        color: rgb(255, 136, 0);
+        top: 0px;
+    }

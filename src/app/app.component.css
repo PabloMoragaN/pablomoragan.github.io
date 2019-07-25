@@ -9,6 +9,11 @@
     padding: 5px;
 }*/
 
+.page-header {
+    display: flex;
+    flex-direction: column;
+}
+
 .page-main {
     flex-grow: 1;
 }
@@ -25,7 +30,7 @@ HEADER
 ******/
 
 .navbar-nav li a {
-    color: black;
+    color: #1A1A1A;
 }
 
 .activado {
@@ -37,7 +42,7 @@ HEADER
 }
 
 .nav-link {
-    color: black;
+    color: #1A1A1A;
 }
 
 .navbar-nav li {
@@ -57,11 +62,6 @@ HEADER
     width: 100%;
     padding: 20px;
     text-align: center;
-}
-
-.page-header {
-    display: flex;
-    flex-direction: column;
 }
 
 

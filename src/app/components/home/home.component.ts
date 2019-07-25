@@ -11,7 +11,7 @@ import {trigger, state,style,animate,transition} from '@angular/animations';
       opacity: 0
     })),
     transition('void <=> *', animate(1000)),
-  ]),]
+  ])]
 })
 export class HomeComponent implements OnInit {
 

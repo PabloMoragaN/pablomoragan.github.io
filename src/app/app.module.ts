@@ -19,6 +19,7 @@ import { NgxExtendedPdfViewerModule } from 'ngx-extended-pdf-viewer';
 import { EmailDialogComponent } from './components/email-dialog/email-dialog.component';
 import { ResumePdfDialogComponent } from './components/resume/resume-pdf-dialog/resume-pdf-dialog.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
+import { VirtualizenBrokerComponent } from './components/portfolio/virtualizen-broker/virtualizen-broker.component';
 
 
 
@@ -33,7 +34,8 @@ import { PortfolioComponent } from './components/portfolio/portfolio.component';
     ResumeComponent,
     EmailDialogComponent,
     ResumePdfDialogComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    VirtualizenBrokerComponent
   ],
   imports: [
     BrowserModule,
