@@ -135,3 +135,13 @@ FOOTER
 .nav-footer a:hover {
     color: #007bff;
 }
+
+.mat-form-field {
+    height: 80%;
+    width: 30%;
+    text-align: center;
+}
+
+.mat-select-trigger {
+    text-align: center;
+}

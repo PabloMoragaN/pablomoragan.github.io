@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
+import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { EmailDialogComponent } from './components/email-dialog/email-dialog.component';
 import { NavigationEnd, Router } from '@angular/router';
 
@@ -10,32 +10,39 @@ import { NavigationEnd, Router } from '@angular/router';
 })
 export class AppComponent implements OnInit {
   title = 'pmoraga-website';
-
-  constructor(public dialog: MatDialog,private _router: Router) {
+  public language = "english";
+  constructor(public dialog: MatDialog, private _router: Router) {
 
   }
-  
+
   ngOnInit(): void {
 
     this._router.events.subscribe((evt) => {
       if (!(evt instanceof NavigationEnd)) {
-          return;
+        return;
       }
       window.scrollTo(0, 0)
-  });
+    });
 
   }
 
 
-   openEmailDialog() : void {
+  openEmailDialog(): void {
     const dialogRef = this.dialog.open(EmailDialogComponent, {
       data: {}
     });
 
     dialogRef.afterClosed().subscribe(result => {
-     
+
     });
 
+  }
+
+
+  selectLanguage(target) {
+
+    this.language=target.value;
+    console.log(this.language);
   }
 
 }
