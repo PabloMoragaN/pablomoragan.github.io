@@ -1,9 +1,3 @@
-.bg-grey {
-    background-color: #F0F0F0;
-    /* Dark Blue */
-    color: #1A1A1A;
-}
-
 .container-fluid {
     padding-top: 70px;
     padding-bottom: 70px;
@@ -81,7 +75,8 @@
 }
 
 .bg-contact {
-    height: 500px;
+    height: auto;
+    min-height: 500px;
     background-color: #F0F0F0;
     -webkit-font-smoothing: subpixel-antialiased;
     text-align: center;
@@ -94,17 +89,34 @@
 }
 
 .example-card {
-    border: 1px solid #1A1A1A;
+    background-color: white;
     text-align: center;
-    border-radius: 0px;
+    color: #1A1A1A;
+    border-radius: 5px;
 }
 
-.mat-button {
-    color: #007bff;
+.example-card>* {
+    margin: 10px;
 }
 
-.mat-card-title {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+div.example-card:hover .example-card {
+    background-color: #1A1A1A;
+    color: bisque;
+}
+
+.top-card {
+    position: relative;
+    height: 250px;
+    width: 400px;
+}
+
+.top-card:hover {
+    background-color: #1A1A1A !important;
+    color: white !important;
+    cursor: pointer;
+}
+
+.span-contact {
+    font-weight: bold;
+    color: #007bff !important;
 }

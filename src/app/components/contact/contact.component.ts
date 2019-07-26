@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { EmailDialogComponent } from '../email-dialog/email-dialog.component';
+import { MatDialog } from '@angular/material';
 
 @Component({
   selector: 'contact',
@@ -8,30 +9,39 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 })
 export class ContactComponent implements OnInit {
 
-  public _sendEmailForm: FormGroup;
 
-  constructor(private _formBuilder: FormBuilder){
+
+  constructor(public dialog: MatDialog){
 
   }
 
 
   async ngOnInit() {
-    await this.createForm();
+
   }
 
-
-
-
-  async createForm() {
-    this._sendEmailForm = this._formBuilder.group({
-      name: ['', [Validators.required]],
-      email: ["", [Validators.required]],
-      comment: ["", [Validators.required]],
+  openHiringEmailDialog(): void {
+    const dialogRef = this.dialog.open(EmailDialogComponent, {
+      data: {type: 'hiring'}
     });
+
+    dialogRef.afterClosed().subscribe(result => {
+
+    });
+
+  }
+
+  openGeneralEmailDialog(): void {
+    const dialogRef = this.dialog.open(EmailDialogComponent, {
+      data: {type: 'general'}
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+
+    });
+
   }
 
 
-  async submitEmail() {
-    console.log(this._sendEmailForm.value);
-  }
+
 }

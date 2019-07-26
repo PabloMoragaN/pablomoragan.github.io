@@ -19,7 +19,17 @@ export class EmailDialogComponent implements OnInit {
   }
 
   async switchType(event) {
-    console.log(event.value);
+
+
+    if(event.value === 'references'){
+      this._sendEmailForm.get('comment').setValue("I'd like to formally request your references.");
+
+    }else if(event.value === 'hiring'){
+      this._sendEmailForm.get('comment').setValue("");
+
+    }else if(event.value === 'general'){
+      this._sendEmailForm.get('comment').setValue("");
+    }
   }
 
 
@@ -31,6 +41,27 @@ export class EmailDialogComponent implements OnInit {
       type: ["",[Validators.required]],
       comment: ["", [Validators.required]],
     });
+
+    if(this.data.type || this.data.type!=null || this.data.type!=undefined){
+
+      if(this.data.type === 'references'){
+        this._sendEmailForm.get('type').setValue("references");
+
+        this._sendEmailForm.get('comment').setValue("I'd like to formally request your references.");
+  
+      }else if(this.data.type === 'hiring'){
+        this._sendEmailForm.get('type').setValue("hiring");
+
+
+      } else if(this.data.type === 'general'){
+        this._sendEmailForm.get('type').setValue("general");
+
+        
+     
+      }
+    }else{
+      console.log('NO DATA TYPE');
+    }
   }
 
 

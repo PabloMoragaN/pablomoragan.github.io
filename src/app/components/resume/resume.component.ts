@@ -38,7 +38,7 @@ export class ResumeComponent implements OnInit {
 
   openEmailDialog(): void {
     const dialogRef = this.dialog.open(EmailDialogComponent, {
-      data: {}
+      data: {type: 'references'}
     });
 
     dialogRef.afterClosed().subscribe(result => {

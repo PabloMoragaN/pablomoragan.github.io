@@ -120,3 +120,18 @@ RADIO BUTTONS COLORS
     border-color: #007bff !important;
     /*outer ring color change*/
 }
+
+
+/***** 
+
+MAT FORM OUTLINE COLOR
+
+******/
+
+.mat-form-field-appearance-outline .mat-form-field-outline {
+    color: #1A1A1A;
+}
+
+.mat-card-title {
+    text-align: center;
+}
