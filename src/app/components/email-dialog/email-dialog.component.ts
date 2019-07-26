@@ -59,8 +59,6 @@ export class EmailDialogComponent implements OnInit {
         
      
       }
-    }else{
-      console.log('NO DATA TYPE');
     }
   }
 
