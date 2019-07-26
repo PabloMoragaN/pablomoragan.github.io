@@ -20,6 +20,7 @@ import { EmailDialogComponent } from './components/email-dialog/email-dialog.com
 import { ResumePdfDialogComponent } from './components/resume/resume-pdf-dialog/resume-pdf-dialog.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { VirtualizenBrokerComponent } from './components/portfolio/virtualizen-broker/virtualizen-broker.component';
+import { ScrollTopComponent } from './components/utils/scroll-top/scroll-top.component';
 
 
 
@@ -35,7 +36,8 @@ import { VirtualizenBrokerComponent } from './components/portfolio/virtualizen-b
     EmailDialogComponent,
     ResumePdfDialogComponent,
     PortfolioComponent,
-    VirtualizenBrokerComponent
+    VirtualizenBrokerComponent,
+    ScrollTopComponent
   ],
   imports: [
     BrowserModule,

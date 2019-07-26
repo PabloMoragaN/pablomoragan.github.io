@@ -195,3 +195,17 @@
     align-content: center;
     -webkit-font-smoothing: subpixel-antialiased;
 }
+
+.bg-references {
+    height: auto;
+    min-height: 500px;
+    background-color: #F0F0F0;
+    -webkit-font-smoothing: subpixel-antialiased;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    color: #1A1A1A;
+}

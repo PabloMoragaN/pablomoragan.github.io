@@ -74,12 +74,6 @@
         color: #1A1A1A;
     }
     
-    .mat-button {
-        color: #007bff;
-        border: 1px solid #1A1A1A;
-       
-    }
-    
     .h1-card-font {
         font-size: 50px;
         color: #1A1A1A;
@@ -92,103 +86,18 @@
         -webkit-font-smoothing: subpixel-antialiased;
     }
     
-    .image-caption-wrapper {
-        opacity: 0;
+    .mat-button {
+        color: #007bff;
+        border: 1px solid #1A1A1A;
+        background-color: white;
         visibility: hidden;
     }
-    
-    .mat-card {
-        font-family: 'Merriweather', serif;
-        height: 300px;
-        width: 300px;
-    }
-    
-    .mat-card:hover .image-caption-wrapper {
-        opacity: 1;
-        transition: opacity .2s ease-in;
-        visibility: visible;
-    }
-    
-    
-    
-    .inner-image {
-        height: 300px;
-        width: 300x;
-    }
-    
-    #container {
-        background: green;
-        height: 300px;
-        width: 300px;
-        position: relative;
-        text-align: center;
-    }
-    
-    #container:hover .inner{
-        background:  rgb(0,0,0,0.8) !important;
-       
-        /*-webkit-filter: grayscale(100%);
-        -moz-filter: grayscale(100%);
-        -ms-filter: grayscale(100%);
-        -o-filter: grayscale(100%);
-        opacity: 0.4;
-        cursor: pointer;
-        */
-        /*  opacity: 0.4;
-        filter: blur(5px);
-        filter: brightness(0%);
-        filter: blur(5px);*/
-    }
-
-    #container:hover .inner-image{
-        opacity: 0.4;
-        filter: blur(5px);
-        filter: brightness(0%);
-        filter: blur(5px);
-    }
-    
-    #image {
-        position: absolute;
-        margin: 0 auto;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        top: 0;
-    }
-    
-    #text {
-        z-index: 100;
-        position: absolute;
-        font-weight: bold;
-        color: white;
-        top: 0px;
-    }
-
-
-
-    .image-grid {
-        font-family: 'Merriweather', serif;
-        background: white;
-        height: 300px;
-        width: 300px;
-    }
-    
-    .image-grid:hover .image-caption-wrapper {
-        opacity: 1;
-        transition: opacity .2s ease-in;
-        visibility: visible;
-    }
-
-
-
-
-
-
-
     /*******************************************
 
 
 
+
+   
 
 
 
@@ -196,113 +105,133 @@ PHP
 
 
     **********************************/
-
-
-
-
+    /* #projects .row { margin: 0px; } // bootstrap 3.1- hack */
     
-/* #projects .row { margin: 0px; } // bootstrap 3.1- hack */
-#projects .row > div { margin-bottom: 30px; }
-#projects figure { position: relative; overflow: hidden; }
-#projects figure h3 { color: #FFF; font-weight: 600; margin-bottom: 5px; }
-#projects figure p > strong { width: 60px; display: inline-block; margin: 0px; }
-#projects figure img { width: 110%; }
-#projects figure figcaption {
-    padding: 20px 30px;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    height: 100%;
-    width: 100%;
-}
-#projects figure a {
-	z-index: 1000;
-	text-indent: 200%;
-	white-space: nowrap;
-	font-size: 0;
-	opacity: 0;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    height: 100%;
-    width: 100%;
-}
-
+    #projects .row>div {
+        margin-bottom: 30px;
+    }
     
-/*---------------*/
-/***** EFFECT *****/
-/*---------------*/
-
-figure.effect {
-    background: #22A39F;
-    box-shadow: 5px 5px 5px #1A1A1A;
-	color: #FFF;
-}
-
-figure.effect img {
-	width: -webkit-calc(100% + 20px);
-	width: calc(100% + 20px);
-	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-	transition: opacity 0.35s, transform 0.35s;
-	-webkit-transform: translate3d(-10px,0,0);
-	transform: translate3d(-10px,0,0);
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
-}
-
-figure.effect:hover img {
-	opacity: 0.2;
-	-webkit-transform: translate3d(0,0,0);
-	transform: translate3d(0,0,0);
-}
-
-figure.effect figcaption {
-	text-align: left;
-}
-
-figure.effect h3 {
-	position: relative;
-	overflow: hidden;
-	padding-bottom: 20px;
-	opacity: 0;
-	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-	transition: opacity 0.35s, transform 0.35s;
-}
-
-figure.effect:hover h3 {
-	opacity: 1;
-}
-
-figure.effect h3::after {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	height: 2px;
-	background: #fff;
-	content: '';
-	-webkit-transition: -webkit-transform 0.35s;
-	transition: transform 0.35s;
-	-webkit-transform: translate3d(-100%,0,0);
-	transform: translate3d(-100%,0,0);
-}
-
-figure.effect:hover h3::after {
-	-webkit-transform: translate3d(0,0,0);
-	transform: translate3d(0,0,0);
-}
-
-figure.effect p {
-	padding-top: 10px;
-	opacity: 0;
-	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-	transition: opacity 0.35s, transform 0.35s;
-	-webkit-transform: translate3d(100%,0,0);
-	transform: translate3d(100%,0,0);
-}
-
-figure.effect:hover p {
-	opacity: 1;
-	-webkit-transform: translate3d(0,0,0);
-	transform: translate3d(0,0,0);
-}
+    #projects figure {
+        position: relative;
+        overflow: hidden;
+    }
+    
+    #projects figure h3 {
+        color: #FFF;
+        font-weight: 600;
+        margin-bottom: 5px;
+    }
+    
+    #projects figure p>strong {
+        width: 60px;
+        display: inline-block;
+        margin: 0px;
+    }
+    
+    #projects figure img {
+        width: 110%;
+    }
+    
+    #projects figure figcaption {
+        padding: 20px 30px;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: 100%;
+        width: 100%;
+    }
+    
+    #projects figure a {
+        z-index: 1000;
+        text-indent: 200%;
+        white-space: nowrap;
+        font-size: 0;
+        opacity: 0;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: 100%;
+        width: 100%;
+    }
+    /*---------------*/
+    /***** EFFECT *****/
+    /*---------------*/
+    
+    figure.effect {
+        background: rgb(0, 0, 0);
+        color: #FFF;
+        border-radius: 2px;
+    }
+    
+    figure.effect img {
+        width: 600;
+        width: -webkit-calc(100% + 20px);
+        width: calc(100% + 20px);
+        -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+        transition: opacity 0.35s, transform 0.35s;
+        -webkit-transform: translate3d(-10px, 0, 0);
+        transform: translate3d(-10px, 0, 0);
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+    
+    figure.effect:hover img {
+        opacity: 0.2;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    
+    figure.effect:hover .mat-button {
+        visibility: visible;
+    }
+    
+    figure.effect figcaption {
+        text-align: center;
+    }
+    
+    figure.effect h3 {
+        position: relative;
+        overflow: hidden;
+        padding-bottom: 20px;
+        opacity: 0;
+        -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+        transition: opacity 0.35s, transform 0.35s;
+    }
+    
+    figure.effect:hover h3 {
+        opacity: 1;
+    }
+    
+    figure.effect h3::after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: #fff;
+        content: '';
+        -webkit-transition: -webkit-transform 0.35s;
+        transition: transform 0.35s;
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+    }
+    
+    figure.effect:hover h3::after {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    
+    figure.effect p {
+        padding-top: 10px;
+        opacity: 0;
+        -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+        transition: opacity 0.35s, transform 0.35s;
+        -webkit-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0);
+    }
+    
+    figure.effect:hover p {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }

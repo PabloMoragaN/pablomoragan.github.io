@@ -45,6 +45,11 @@ Colors
     border-color: #007bff;
 }
 
+.mat-scroll-button {
+    background-color: #007bff;
+    color: white;
+}
+
 .mat-matbutton-success {
     background-color: #28A745;
     color: white;
@@ -79,4 +84,39 @@ Spinner y progress bar
 .mat-progress-spinner circle,
 .mat-spinner circle {
     stroke: #007bff;
+}
+
+
+/******
+
+NO OUTLINE ON BUTTON CLICK
+
+******/
+
+button:focus,
+button:active:focus,
+button.active:focus {
+    outline: none !important;
+    outline-style: none !important;
+    box-shadow: none !important;
+}
+
+
+/**
+RADIO BUTTONS COLORS
+***/
+
+.mat-radio-button.mat-accent .mat-radio-ripple .mat-ripple-element {
+    /*click effect color change*/
+    background-color: #007bff !important;
+}
+
+.mat-radio-button.mat-accent .mat-radio-inner-circle {
+    background-color: #007bff !important;
+    /*inner circle color change*/
+}
+
+.mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle {
+    border-color: #007bff !important;
+    /*outer ring color change*/
 }

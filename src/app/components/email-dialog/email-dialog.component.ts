@@ -18,13 +18,17 @@ export class EmailDialogComponent implements OnInit {
     await this.createForm();
   }
 
-
+  async switchType(event) {
+    console.log(event.value);
+  }
 
 
   async createForm() {
     this._sendEmailForm = this._formBuilder.group({
-      name: ['', [Validators.required]],
+      firstname: ['', [Validators.required]],
+      lastname: ['', [Validators.required]],
       email: ["", [Validators.required]],
+      type: ["",[Validators.required]],
       comment: ["", [Validators.required]],
     });
   }

@@ -179,3 +179,16 @@
     text-align: center;
     border-radius: 2px;
 }
+
+.bg-poem {
+    height: auto;
+    min-height: 500px;
+    -webkit-font-smoothing: subpixel-antialiased;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    color: #1A1A1A;
+}

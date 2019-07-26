@@ -1,32 +1,66 @@
-<h1 mat-dialog-title>EMAIL ME</h1>
-
 <div class="container-fluid merriweather">
 
 
     <form [formGroup]="_sendEmailForm" (submit)="submitEmail()" id="formSendEmail" autocomplete="off">
         <div mat-dialog-content>
-            <div class="flex-div-column">
-            <div class="flex-div-row">
-                <mat-form-field floatLabel="always">
-                    <input formControlName="name" matInput placeholder="Name" type="text">
-                </mat-form-field>
+            <div>
+                <mat-label>Full Name</mat-label>
+                <div class="flex-div">
+                    <mat-form-field>
+                        <input formControlName="firstname" matInput type="text">
+                        <mat-hint>First Name</mat-hint>
+                    </mat-form-field>
 
-                <mat-form-field floatLabel="always">
-                    <input formControlName="email" matInput placeholder="Email" type="email">
-                </mat-form-field>
+                    <mat-form-field>
+                        <input formControlName="lastname" matInput type="text">
+                        <mat-hint>Last Name</mat-hint>
+
+                    </mat-form-field>
+                </div>
             </div>
 
-            <div class="flex-div-row">
-                <mat-form-field floatLabel="always">
-                    <textarea matInput formControlName="comment" placeholder="Comment"></textarea>
-                </mat-form-field>
+            <div style="margin-top: 15px">
+                <mat-label>Email Address</mat-label>
+
+                <div class="flex-div-row">
+                    <mat-form-field>
+                        <input formControlName="email" matInput type="email">
+                    </mat-form-field>
+
+                </div>
             </div>
-        </div>
+
+            <div style="margin-top: 15px">
+                <mat-label>Type of contact</mat-label>
+                <div style="margin-top: 8px" class="flex-div-column">
+                    <div>
+
+                        <mat-radio-group class="flex-div-column" formControlName="type">
+                            <mat-radio-button (change)="switchType($event)" value="refernces">Request References</mat-radio-button>
+                            <mat-radio-button (change)="switchType($event)" value="hiring">Hiring Request</mat-radio-button>
+                            <mat-radio-button (change)="switchType($event)" value="general">General Questions</mat-radio-button>
+                        </mat-radio-group>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div style="margin-top: 15px">
+                <mat-label>A few details:</mat-label>
+
+                <div class="flex-div-row">
+                    <mat-form-field floatLabel="always" appearance="outline">
+                        <textarea style="height: 80px" matInput formControlName="comment" placeholder="Comment"></textarea>
+
+                    </mat-form-field>
+                </div>
+            </div>
 
         </div>
-        <div mat-dialog-actions>
-            <button type="button" mat-button (click)="closeDialog()">No Thanks</button>
-            <button type="submit" [disabled]="!_sendEmailForm.valid" mat-raised-button>Send</button>
+        <div mat-dialog-actions style="text-align: center">
+            <button type="button" mat-raised-button (click)="closeDialog()">No Thanks</button>
+            <button type="submit" mat-button [disabled]="!_sendEmailForm.valid" mat-raised-button>Send</button>
         </div>
     </form>
 
