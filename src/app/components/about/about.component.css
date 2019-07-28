@@ -35,7 +35,7 @@
 }
 
 .bg-social-media {
-    background-color: #F0F0F0;
+    background-color: white;
     height: 500px;
     text-align: center;
     display: flex;
@@ -163,9 +163,10 @@
 .bg-spotify {
     margin-top: 20px;
     margin-bottom: 20px;
-    min-height: 500px;
-    background-color: white;
+    min-height: 700px;
     height: auto;
+    background-color: white;
+
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -182,6 +183,7 @@
 .bg-poem {
     height: auto;
     min-height: 500px;
+    background-color: #F0F0F0;
     -webkit-font-smoothing: subpixel-antialiased;
     text-align: center;
     display: flex;
@@ -191,3 +193,13 @@
     align-content: center;
     color: #1A1A1A;
 }
+
+
+
+/*****
+
+
+ANIMATIONS 
+
+
+******/

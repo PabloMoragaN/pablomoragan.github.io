@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { EmailDialogComponent } from './components/email-dialog/email-dialog.component';
 import { NavigationEnd, Router } from '@angular/router';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-root',
@@ -16,6 +17,9 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit(): void {
+
+  AOS.init();
+
 
     this._router.events.subscribe((evt) => {
       if (!(evt instanceof NavigationEnd)) {

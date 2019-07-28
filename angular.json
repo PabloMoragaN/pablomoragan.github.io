@@ -29,12 +29,14 @@
                         ],
                         "styles": [
                             "./node_modules/flag-icon-css/css/flag-icon.min.css",
+                            "./node_modules/aos/dist/aos.css",
                             "src/styles.css"
                         ],
                         "scripts": [
                             "node_modules/ngx-extended-pdf-viewer/assets/pdf.js",
                             "node_modules/ngx-extended-pdf-viewer/assets/pdf.worker.js",
-                            "node_modules/ngx-extended-pdf-viewer/assets/viewer.js"
+                            "node_modules/ngx-extended-pdf-viewer/assets/viewer.js",
+                            "node_modules/aos/dist/aos.js"
                         ],
                         "es5BrowserSupport": true
                     },
