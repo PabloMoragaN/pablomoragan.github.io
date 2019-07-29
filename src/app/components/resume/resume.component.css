@@ -42,7 +42,7 @@
 }
 
 .tools-flex>*{
-    flex: 1 0 11%; /* explanation below */
+    flex: 1 0 11%; 
   margin: 10px;
   height: 100px;
 

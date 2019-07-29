@@ -62,7 +62,8 @@
     /****PROJECTS*****/
     
     .bg-projects {
-        height: 500px;
+        min-height: 500px;
+        height: auto;
         background-color: #F0F0F0;
         -webkit-font-smoothing: subpixel-antialiased;
         text-align: center;
@@ -178,6 +179,7 @@ PHP
     
     figure.effect:hover img {
         opacity: 0.2;
+        filter: blur(3px);
         -webkit-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0);
     }
@@ -236,3 +238,22 @@ PHP
         -webkit-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0);
     }
+
+
+    /************/
+
+
+    
+.tools-flex{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.tools-flex>*{
+    flex: 1 0 33%; 
+    max-width: 600px;
+
+}
+

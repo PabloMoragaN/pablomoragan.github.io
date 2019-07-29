@@ -7,9 +7,12 @@ import { MatDialog } from '@angular/material';
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.css']
 })
+
+
 export class ContactComponent implements OnInit {
 
-
+  lat: number = 38.9860758;
+  lng: number = -3.9444976;
 
   constructor(public dialog: MatDialog){
 
@@ -43,5 +46,5 @@ export class ContactComponent implements OnInit {
   }
 
 
-
+   
 }

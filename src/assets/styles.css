@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css?family=Capriola&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 .roboto {
     font-family: 'Roboto', sans-serif;
 }
@@ -29,3 +30,9 @@
     font-weight: bold;
 }
 
+
+.muli{
+    font-family: 'Muli', sans-serif;
+    font-size: 70px;
+    font-weight: bold;
+}
