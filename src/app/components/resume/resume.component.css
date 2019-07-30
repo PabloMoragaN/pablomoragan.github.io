@@ -344,12 +344,16 @@ ul.no-bullets { list-style-type: none; margin: 0px; padding: 0px; }
 .technology:hover{
     background-color: #F0F0F0;
     border-radius: 2px;
-    margin-left: 4px;
 }
 .technology:hover .score .fas{
     margin-left: 10px;
 }
 
+.tool:hover{
+    background-color: #DFE0E0;
+    border-radius: 4px;
+
+}
 
 .separator{
     margin-left: 6px;
