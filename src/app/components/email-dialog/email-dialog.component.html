@@ -1,18 +1,21 @@
 <div class="container-fluid raleway">
 
+        <script type="text/javascript">var submitted=false;</script>
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
 
-    <form [formGroup]="_sendEmailForm" (submit)="submitEmail()" id="formSendEmail" autocomplete="off">
+    <form [formGroup]="_sendEmailForm" (submit)="submitEmail()" #formSendEmail action="https://docs.google.com/forms/d/e/1FAIpQLSfjdz-h4L3JUF-rnIA8nMoV7zlBdHzhuoDhIk1zcdpBXshzFA/formResponse"
+    method="post" target="hidden_iframe" onsubmit="submitted=true;" autocomplete="off">
         <div mat-dialog-content>
             <div>
                 <mat-label>Full Name</mat-label>
                 <div class="flex-div">
                     <mat-form-field>
-                        <input formControlName="firstname" matInput type="text">
+                        <input formControlName="firstname" name="entry.1616566373" matInput type="text">
                         <mat-hint>First Name</mat-hint>
                     </mat-form-field>
 
                     <mat-form-field>
-                        <input formControlName="lastname" matInput type="text">
+                        <input formControlName="lastname" name="entry.838842369" matInput type="text">
                         <mat-hint>Last Name</mat-hint>
 
                     </mat-form-field>
@@ -24,7 +27,7 @@
 
                 <div class="flex-div-row">
                     <mat-form-field>
-                        <input formControlName="email" matInput type="email">
+                        <input formControlName="email" matInput type="email" name="entry.709813097">
                     </mat-form-field>
 
                 </div>
@@ -35,7 +38,7 @@
                 <div style="margin-top: 8px" class="flex-div-column">
                     <div>
 
-                        <mat-radio-group class="flex-div-column" formControlName="type">
+                        <mat-radio-group class="flex-div-column" formControlName="type" name="entry.1493393117">
                             <mat-radio-button (change)="switchType($event)" value="references">Request References</mat-radio-button>
                             <mat-radio-button (change)="switchType($event)" value="hiring">Hiring Request</mat-radio-button>
                             <mat-radio-button (change)="switchType($event)" value="general">General Questions</mat-radio-button>
@@ -51,7 +54,7 @@
 
                 <div class="flex-div-row">
                     <mat-form-field appearance="outline">
-                        <textarea style="height: 80px;" matInput formControlName="comment"></textarea>
+                        <textarea style="height: 80px;" matInput formControlName="comment" name="entry.1470761395"></textarea>
                         <mat-hint>Comment whatever you would like to</mat-hint>
 
                     </mat-form-field>
@@ -61,7 +64,7 @@
         </div>
         <div mat-dialog-actions style="text-align: center">
             <button type="button" mat-raised-button (click)="closeDialog()">No Thanks</button>
-            <button type="submit" mat-button [disabled]="!_sendEmailForm.valid" mat-raised-button>Send</button>
+            <button type="submit" mat-button [disabled]="!_sendEmailForm.valid" (click)="formSendEmail.submit(); " mat-raised-button>Send</button>
         </div>
     </form>
 
@@ -97,8 +100,13 @@
     <label>Name*</label>
     <input type="text" placeholder="Last Name*" name="entry.838842369" required>
 
+
+
+
     <label>Email Address*</label>
     <input type="text" placeholder="Email address*" name="entry.709813097" required>
+
+type of contact : name="entry.1493393117"
 
 
     <label>Message*</label>
@@ -107,3 +115,4 @@
     <button type="submit" (click)="form.submit();">Send</button>
 </form>
 -->
+

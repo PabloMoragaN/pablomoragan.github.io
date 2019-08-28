@@ -1,7 +1,8 @@
 import { Component, OnInit, Inject } from '@angular/core';
-import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { MatDialogRef, MAT_DIALOG_DATA, MatDialog } from '@angular/material/dialog';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { EmailSenderService } from 'src/app/services/email-sender.service';
+import { WarningGenericComponent } from '../warning-generic/warning-generic.component';
 
 @Component({
   selector: 'email-dialog',
@@ -12,9 +13,10 @@ import { EmailSenderService } from 'src/app/services/email-sender.service';
 export class EmailDialogComponent implements OnInit {
 
   constructor(public dialogRef: MatDialogRef<EmailDialogComponent>,
-    @Inject(MAT_DIALOG_DATA) public data, private _formBuilder: FormBuilder, private _emailSenderService: EmailSenderService) { }
+    @Inject(MAT_DIALOG_DATA) public data, private _formBuilder: FormBuilder, private _emailSenderService: EmailSenderService,private dialog?: MatDialog) { }
 
   public _sendEmailForm: FormGroup;
+  public isPopupOpened = true;
 
   async ngOnInit() {
     await this.createForm();
@@ -66,19 +68,21 @@ export class EmailDialogComponent implements OnInit {
 
 
   async submitEmail() {
-    console.log(this._sendEmailForm.value);
-/*
-    await this._emailSenderService.sendEmail(this._sendEmailForm.value).subscribe(result => {
+
+      this.isPopupOpened = true;
+      const dialogRef = this.dialog.open(WarningGenericComponent, {
+        
+        data: { message: "I'll get in touch with you as soon as I can. Thanks for your email "+this._sendEmailForm.value.firstname+".", timer: 10 }
+      });
 
 
-      console.log(result);
+      dialogRef.afterClosed().subscribe(async result => {
+        this.isPopupOpened = false;
+        return;
+      });
 
-      this.dialogRef.close();
-
-    }, error => { console.log(error); })*/
+    this.dialogRef.close();
   }
-
-
   closeDialog() {
     this.dialogRef.close();
   }
