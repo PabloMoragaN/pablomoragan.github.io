@@ -7,6 +7,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { ResumeComponent } from './components/resume/resume.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { VirtualizenBrokerComponent } from './components/portfolio/virtualizen-broker/virtualizen-broker.component';
+import { WebsiteFrontendComponent } from './components/portfolio/website-frontend/website-frontend.component';
 
 const routes: Routes = [
   {path: '',component: HomeComponent},
@@ -16,6 +17,7 @@ const routes: Routes = [
   {path: 'resume',component: ResumeComponent},
   {path: 'portfolio',component: PortfolioComponent},
   {path: 'virtualizen-broker',component: VirtualizenBrokerComponent},
+  {path: 'website-frontend',component: WebsiteFrontendComponent},
   {path: '**',component: ErrorComponent}
 ];
 

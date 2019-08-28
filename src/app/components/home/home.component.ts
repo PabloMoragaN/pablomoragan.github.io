@@ -24,6 +24,4 @@ export class HomeComponent implements OnInit {
   changeState() {
     this.currentState = this.currentState === 'initial' ? 'final' : 'initial';
   }
-
-
 }

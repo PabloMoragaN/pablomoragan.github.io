@@ -22,6 +22,7 @@ import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { VirtualizenBrokerComponent } from './components/portfolio/virtualizen-broker/virtualizen-broker.component';
 import { ScrollTopComponent } from './components/utils/scroll-top/scroll-top.component';
 import { WarningGenericComponent } from './components/warning-generic/warning-generic.component';
+import { WebsiteFrontendComponent } from './components/portfolio/website-frontend/website-frontend.component';
 
 
 
@@ -40,7 +41,8 @@ import { WarningGenericComponent } from './components/warning-generic/warning-ge
     PortfolioComponent,
     VirtualizenBrokerComponent,
     ScrollTopComponent,
-    WarningGenericComponent
+    WarningGenericComponent,
+    WebsiteFrontendComponent
   ],
   imports: [
     BrowserModule,
