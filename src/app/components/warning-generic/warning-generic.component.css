@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+.fontChange {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: bold;
+}
+
+
+/*STYLES*/
+
+.toolbar-spacer {
+    flex: 1 1 auto;
+}
+
+.mat-dialog-actions {
+    justify-content: flex-end;
+}
+
+.mat-success {
+    background-color: #28A745;
+    color: white;
+}
+
+.mat-primaryWrapper {
+    background-color: #007bff;
+    color: white;
+}
+
+.mat-dup {
+    background-color: #FC6D26;
+    color: white;
+}
+
+.mat-danger {
+    background-color: #e41e1e;
+    color: white;
+}
+
+button {
+    font-family: 'Titillium Web', sans-serif;
+}

@@ -20,7 +20,6 @@ export class AppComponent implements OnInit {
 
   AOS.init();
 
-
     this._router.events.subscribe((evt) => {
       if (!(evt instanceof NavigationEnd)) {
         return;

@@ -1,6 +1,6 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { EmailDialogComponent } from '../../email-dialog/email-dialog.component';
-import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
+import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 
 @Component({
   selector: 'resume-pdf-dialog',

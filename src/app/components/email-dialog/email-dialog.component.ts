@@ -1,5 +1,5 @@
 import { Component, OnInit, Inject } from '@angular/core';
-import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
+import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { EmailSenderService } from 'src/app/services/email-sender.service';
 
@@ -67,7 +67,7 @@ export class EmailDialogComponent implements OnInit {
 
   async submitEmail() {
     console.log(this._sendEmailForm.value);
-
+/*
     await this._emailSenderService.sendEmail(this._sendEmailForm.value).subscribe(result => {
 
 
@@ -75,7 +75,7 @@ export class EmailDialogComponent implements OnInit {
 
       this.dialogRef.close();
 
-    }, error => { console.log(error); })
+    }, error => { console.log(error); })*/
   }
 
 

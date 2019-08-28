@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { EmailDialogComponent } from '../email-dialog/email-dialog.component';
-import { MatDialog } from '@angular/material';
+import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'contact',

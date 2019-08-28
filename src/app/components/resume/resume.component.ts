@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ResumePdfDialogComponent } from './resume-pdf-dialog/resume-pdf-dialog.component';
-import { MatDialog } from '@angular/material';
+import { MatDialog } from '@angular/material/dialog';
 import { EmailDialogComponent } from '../email-dialog/email-dialog.component';
 
 @Component({

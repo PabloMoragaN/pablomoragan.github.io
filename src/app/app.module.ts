@@ -21,6 +21,7 @@ import { ResumePdfDialogComponent } from './components/resume/resume-pdf-dialog/
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { VirtualizenBrokerComponent } from './components/portfolio/virtualizen-broker/virtualizen-broker.component';
 import { ScrollTopComponent } from './components/utils/scroll-top/scroll-top.component';
+import { WarningGenericComponent } from './components/warning-generic/warning-generic.component';
 
 
 
@@ -38,7 +39,8 @@ import { ScrollTopComponent } from './components/utils/scroll-top/scroll-top.com
     ResumePdfDialogComponent,
     PortfolioComponent,
     VirtualizenBrokerComponent,
-    ScrollTopComponent
+    ScrollTopComponent,
+    WarningGenericComponent
   ],
   imports: [
     BrowserModule,
@@ -52,7 +54,7 @@ import { ScrollTopComponent } from './components/utils/scroll-top/scroll-top.com
     NgxExtendedPdfViewerModule
   ],
   providers: [],
-  entryComponents:[EmailDialogComponent,ResumePdfDialogComponent],
+  entryComponents:[EmailDialogComponent,ResumePdfDialogComponent,WarningGenericComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
