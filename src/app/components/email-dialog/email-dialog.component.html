@@ -28,7 +28,18 @@
                 <div class="flex-div-row">
                     <mat-form-field>
                         <input formControlName="email" matInput type="email" name="entry.709813097">
+                        <mat-error *ngIf="_sendEmailForm.get('email').invalid">Invalid email pattern</mat-error>
                     </mat-form-field>
+
+
+<!--
+                    <div *ngIf="email.errors &&(email.touched || email.dirty)" >
+                        <div [hidden]="!email.errors?.pattern">
+                          Invalid pattern
+                        </div> 
+                       </div> -->
+
+
 
                 </div>
             </div>
