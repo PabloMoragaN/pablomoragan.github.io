@@ -121,8 +121,8 @@
 }
 
 .masthead {
-    height: 100vh;
-    min-height: 500px;
+    height: auto;
+    min-height: 100vh;
     background-image: url('../../../assets/images/about/masthead-about.jpg');
     background-size: cover;
     background-position: center;
@@ -130,12 +130,15 @@
     overflow: visible;
 }
 
+
+
 .masthead-column {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: baseline;
     align-content: center;
+    flex-wrap: nowrap;
     margin-top: 10%;
     margin-left: 5%;
 }
@@ -146,6 +149,8 @@
 
 .bg-location {
     background-color: #F0F0F0;
+    height: auto;
+    min-height: 500px;
     color: #1A1A1A;
     display: flex;
     flex-direction: row;
@@ -160,13 +165,23 @@
     margin: 40px;
 }
 
+
+
+
+.responsive-image{
+    max-width: 100%;
+  height: auto;
+  max-height: 600px;
+}
+
+
 .bg-spotify {
     margin-top: 20px;
     margin-bottom: 20px;
     min-height: 700px;
     height: auto;
     background-color: white;
-
+    flex-wrap: nowrap;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -196,10 +211,46 @@
 
 
 
+
+
 /*****
 
 
-ANIMATIONS 
+RESIZING
 
 
 ******/
+
+
+@media (max-width: 500px) {
+
+    .bg-location {
+       
+        flex-wrap: wrap;
+       
+    }
+
+    .bg-spotify {
+        flex-wrap: wrap;
+    }
+
+    .flex-div{
+        flex-wrap: wrap;
+    }
+
+    .masthead-column{
+    flex-wrap: wrap;
+    }
+
+    .h1-font{
+        font-size: 70px;
+    }
+
+    
+    .h2-font{
+        font-size: 40px;
+    }
+
+
+}
+

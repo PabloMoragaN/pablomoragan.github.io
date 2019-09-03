@@ -39,8 +39,8 @@ p {
 }
 
 .masthead {
-    height: 100vh;
-    min-height: 500px;
+    height: auto;
+    min-height: 100vh;
     background-image: url('../../../assets/images/home/masthead-home.jpg');
     background-size: cover;
     background-position: center;
@@ -105,3 +105,21 @@ p {
   align-items: center;
   align-content: center;
 }
+
+
+/*****
+
+
+RESIZING
+
+
+******/
+
+
+@media (max-width: 500px) {
+    .bg-profile {
+        flex-wrap: wrap;
+       
+    }
+}
+

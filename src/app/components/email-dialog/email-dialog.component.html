@@ -1,13 +1,11 @@
-<div class="container-fluid raleway">
 
         <script type="text/javascript">var submitted=false;</script>
         <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
-
     <form [formGroup]="_sendEmailForm" (submit)="submitEmail()" #formSendEmail action="https://docs.google.com/forms/d/e/1FAIpQLSfjdz-h4L3JUF-rnIA8nMoV7zlBdHzhuoDhIk1zcdpBXshzFA/formResponse"
     method="post" target="hidden_iframe" onsubmit="submitted=true;" autocomplete="off">
-        <div mat-dialog-content>
+        <mat-dialog-content class="example-container">
             <div>
-                <mat-label>Full Name</mat-label>
+                <mat-label>Fullk Name</mat-label>
                 <div class="flex-div">
                     <mat-form-field>
                         <input formControlName="firstname" name="entry.1616566373" matInput type="text">
@@ -30,16 +28,6 @@
                         <input formControlName="email" matInput type="email" name="entry.709813097">
                         <mat-error *ngIf="_sendEmailForm.get('email').invalid">Invalid email pattern</mat-error>
                     </mat-form-field>
-
-
-<!--
-                    <div *ngIf="email.errors &&(email.touched || email.dirty)" >
-                        <div [hidden]="!email.errors?.pattern">
-                          Invalid pattern
-                        </div> 
-                       </div> -->
-
-
 
                 </div>
             </div>
@@ -72,15 +60,14 @@
                 </div>
             </div>
 
-        </div>
-        <div mat-dialog-actions style="text-align: center">
+        </mat-dialog-content>
+        <mat-dialog-actions style="text-align: center">
             <button type="button" mat-raised-button (click)="closeDialog()">No Thanks</button>
             <button type="submit" mat-button [disabled]="!_sendEmailForm.valid" (click)="formSendEmail.submit(); " mat-raised-button>Send</button>
-        </div>
+        </mat-dialog-actions>
     </form>
 
 
-</div>
 
 <!-------
 --------
@@ -94,36 +81,3 @@
 ------
 -------
 -------->
-
-
-
-<!---
-<script type="text/javascript">var submitted=false;</script>
-<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
-
-<form #form action="https://docs.google.com/forms/d/e/1FAIpQLSfjdz-h4L3JUF-rnIA8nMoV7zlBdHzhuoDhIk1zcdpBXshzFA/formResponse"
-    method="post" target="hidden_iframe" onsubmit="submitted=true;" autocomplete="off">
-
-
-    <label>Name*</label>
-    <input type="text" placeholder="First Name*" name="entry.1616566373" required>
-
-    <label>Name*</label>
-    <input type="text" placeholder="Last Name*" name="entry.838842369" required>
-
-
-
-
-    <label>Email Address*</label>
-    <input type="text" placeholder="Email address*" name="entry.709813097" required>
-
-type of contact : name="entry.1493393117"
-
-
-    <label>Message*</label>
-    <textarea rows="5" placeholder="Message*" name="entry.1470761395" required></textarea>
-
-    <button type="submit" (click)="form.submit();">Send</button>
-</form>
--->
-

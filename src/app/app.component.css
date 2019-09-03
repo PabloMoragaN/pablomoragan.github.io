@@ -73,6 +73,7 @@ FOOTER
 
 .page-footer {
     font-size: 12px;
+    width: auto;
     text-align: center;
     background: #1A1A1A;
     color: white;

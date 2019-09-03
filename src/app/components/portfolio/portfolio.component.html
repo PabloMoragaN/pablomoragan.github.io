@@ -1,8 +1,8 @@
 <div class="container-fluid text-center masthead raleway">
     <div class="masthead-column">
-        <h1 class="margin h1-font">My Portfolio</h1>
-        <h2 class="margin h2-font"> Work and personal projects</h2>
-        <button mat-raised-button style="margin-top: 40px; margin-left: 10%"><a
+        <h1 class="h1-font">My Portfolio</h1>
+        <h2 class=" h2-font"> Work and personal projects</h2>
+        <button class="btn-masthead" mat-raised-button><a
                 style="text-decoration: none; color: #1A1A1A" target="_blank" rel="noopener noreferrer"
                 href="https://github.com/PabloMoragaN"> Visit my GitHub Page<i style="margin: 5px"
                     class="fab fa-github"></i></a> </button>
@@ -38,52 +38,56 @@
 
 
 
-    <div id="projects" class="tools-flex">
+    <div id="projects" class="flex-div">
 
 
 
 
-        <div data-aos="fade-up" data-aos-once="true" class="col-md-6 col-sm-12 col-xs-12 ">
+        <div data-aos="fade-up" data-aos-once="true" >
             <figure class="effect mat-elevation-z8">
-                <img src="../../../assets/images/portfolio/projects/virtualizen-broker-600.PNG"
+                <img   src="../../../assets/images/portfolio/projects/virtualizen-broker-600.PNG"
                     alt="VirtualiZen Broker" />
 
                 <figcaption>
                     <h3>VirtualiZen Broker</h3>
-                    <p>A virtual KNX Devices configuration system </p>
-                    <p><strong>Tags:</strong> <br /> Angular - Node.js - Electron.js - Socket.io - Bootstrap</p>
+                    <p>A virtual KNX Devices configuration system <br>
+                     Angular - Node.js - Electron.js - Socket.io - Bootstrap</p>
 
-                    <button mat-button><a href="/virtualizen-broker" target="_blank"></a>VIEW PROJECT</button>
-
+                    <button class="project-btn" mat-button><a href="/virtualizen-broker" target="_blank"></a>VIEW PROJECT</button>
+                    <span class="icon">
+                        <i class="fas fa-external-link-square-alt"></i>
+                    </span>
                 </figcaption>
             </figure>
         </div>
 
-        <div data-aos="fade-up" data-aos-once="true" class="col-md-6 col-sm-12 col-xs-12 ">
+        <div data-aos="fade-up" data-aos-once="true">
             <figure class="effect mat-elevation-z8">
-                <img src="../../../assets/images/portfolio/projects/pmoraga-website-600.PNG" alt="Website Frontend" />
+                <img  src="../../../assets/images/portfolio/projects/pmoraga-website-600.PNG" alt="Website Frontend" />
 
                 <figcaption>
                     <h3>My Website Frontend</h3>
-                    <p>Designed and created by me</p>
-                    <p><strong>Tags:</strong> <br />Angular - Bootstrap</p>
-                    <button mat-button><a href="/website-frontend" target="_blank"></a>VIEW PROJECT</button>
-
+                    <p>Angular - Bootstrap</p>
+                    <button class="project-btn" mat-button><a href="/website-frontend" target="_blank"></a>VIEW PROJECT</button>
+                    <span class="icon">
+                        <i class="fas fa-external-link-square-alt"></i>
+                    </span>
                 </figcaption>
             </figure>
         </div>
 
 
-        <div data-aos="fade-up" data-aos-once="true" class="col-md-6 col-sm-12 col-xs-12 ">
+        <div data-aos="fade-up" data-aos-once="true" >
             <figure class="effect mat-elevation-z8">
-                <img src="../../../assets/images/portfolio/projects/server-600.PNG" alt="Website Backend" />
+                <img  src="../../../assets/images/portfolio/projects/server-600.PNG" alt="Website Backend" />
 
                 <figcaption>
                     <h3>My Website Backend</h3>
-                    <p>Designed and created by me</p>
-                    <p><strong>Tags:</strong> <br />Node.js - Express.js</p>
-                    <button mat-button><a (click)="openWarningGeneric()"></a>VIEW PROJECT</button>
-
+                    <p>Node.js - Express.js</p>
+                    <button class="project-btn" mat-button><a (click)="openWarningGeneric()"></a>VIEW PROJECT</button>
+                    <span class="icon">
+                        <i class="fas fa-external-link-square-alt"></i>
+                    </span>
                 </figcaption>
             </figure>
         </div>

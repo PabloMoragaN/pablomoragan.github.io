@@ -48,3 +48,12 @@ mat-label {
 .mat-dialog-content{
     min-width: 600px;
 }
+
+.example-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .example-container > * {
+    width: 100%;
+  }
