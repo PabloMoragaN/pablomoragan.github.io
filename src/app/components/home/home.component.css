@@ -119,7 +119,10 @@ RESIZING
 @media (max-width: 500px) {
     .bg-profile {
         flex-wrap: wrap;
-       
+    }
+
+    .bg-profile>*{
+        margin: 10px;
     }
 }
 

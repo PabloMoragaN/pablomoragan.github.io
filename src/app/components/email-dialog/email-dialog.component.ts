@@ -40,7 +40,6 @@ export class EmailDialogComponent implements OnInit {
   async createForm() {
     this._sendEmailForm = this._formBuilder.group({
       firstname: ['', [Validators.required]],
-      lastname: ['', [Validators.required]],
       email: ["", [Validators.required,Validators.email]],
       type: ["", [Validators.required]],
       comment: [""],

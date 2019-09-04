@@ -9,6 +9,7 @@
     justify-content: space-around;
     align-content: center;
     align-items: center;
+    flex-wrap: nowrap;
 }
 
 .flex-div>* {
@@ -26,8 +27,8 @@
 /******/
 
 .masthead {
-    height: 100vh;
-    min-height: 500px;
+    height: auto;
+    min-height: 100vh;
     background-image: url('../../../assets/images/contact/masthead-contact.jpg');
     background-size: cover;
     background-position: center;
@@ -37,6 +38,7 @@
 
 .masthead-column {
     display: flex;
+    flex-wrap: nowrap;
     flex-direction: column;
     justify-content: center;
     align-items: baseline;
@@ -90,6 +92,7 @@
 
 .example-card {
     background-color: white;
+    height: auto;
     text-align: center;
     color: #1A1A1A;
     border-radius: 5px;
@@ -119,4 +122,55 @@ div.example-card:hover .example-card {
 .span-contact {
     font-weight: bold;
     color: #007bff !important;
+}
+
+
+
+/****************
+
+************
+
+******
+
+************
+
+****************/
+
+
+
+
+
+
+
+@media (max-width: 500px) {
+
+    .masthead-column , .flex-div{
+        flex-wrap: wrap;
+      }
+    
+
+      .h1-font {
+        font-size: 70px;
+      }
+    
+      .h2-font {
+        font-size: 40px;
+      }
+
+      h1{
+          font-size: 25px;
+      }
+   
+
+}
+
+
+
+@media (max-width: 1200px) {
+
+    .masthead-column , .flex-div{
+        flex-wrap: wrap;
+      }
+
+
 }

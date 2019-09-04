@@ -4,8 +4,8 @@
         <h2 class="margin h2-font">Get to know me as a professional</h2>
 
         <div class="flex-div-btn-masthead" >
-            <button class="btn-masthead" mat-raised-button>Download my Resume <i style="margin: 5px" class="fas fa-file-download"></i>
-            </button>
+            <!---<button class="btn-masthead" mat-raised-button>Download my Resume <i style="margin: 5px" class="fas fa-file-download"></i>-
+            </button>-->
             <button class="btn-masthead" mat-raised-button (click)="openResumePdfDialog()">Show my Resume <i style="margin: 5px"
                     class="fas fa-long-arrow-alt-right"></i> </button>
         </div>
@@ -465,21 +465,21 @@
 
 <section class="raleway bg-references">
 
-    <div>
+    <div class="flex-div-column">
         <h2>References</h2>
 
         <h5> References avaliable on request</h5>
 
-        <button style="font-size: 14px" mat-raised-button (click)="openEmailDialog()">Request them<i
+        <button class="btn-request"  mat-raised-button (click)="openEmailDialog()">Request them<i
                 style="margin-left: 5px" class="far fa-envelope"></i> </button>
     </div>
 
 
-    <div style="margin-top: -5%">
+    <div >
 
 
         <figure>
-            <p style="font-size: 15px">
+            <p class="reference" >
                 <i> Despite lacking experience, Pablo has shown that he possesses the qualities and aptitudes necessary
                     to carry out<br> with excellence the objectives that he had set based on technologies that were
                     completely alien to him.<br> This has been

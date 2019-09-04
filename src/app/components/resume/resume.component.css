@@ -1,6 +1,7 @@
 .bg-tech-skills {
   min-height: 500px;
   height: auto;
+  padding-top: 20px;
   background-color: white;
   -webkit-font-smoothing: subpixel-antialiased;
 }
@@ -304,6 +305,7 @@ ul.no-bullets {
 
 .technology > * {
   margin: 10px;
+  width: auto;
 }
 
 .technology .title {
@@ -312,7 +314,8 @@ ul.no-bullets {
 }
 
 .technology .score {
-  float: right;
+  position: absolute;
+  right: 0;
 }
 
 .technology .score .fas {
@@ -334,6 +337,8 @@ ul.no-bullets {
   margin-left: 10px;
 }
 
+
+
 .tool:hover {
   background-color: #dfe0e0;
   border-radius: 4px;
@@ -342,6 +347,17 @@ ul.no-bullets {
 .separator {
   margin-left: 6px;
   margin-right: 6px;
+}
+
+
+.btn-request{
+  font-size: 14px
+
+}
+
+.reference{
+  font-size: 15px;
+  text-align:justify;
 }
 
 /***********
@@ -387,4 +403,31 @@ RESIZING
   }
 
 
+  .technology .title{
+    font-size: 15px;
+    margin-right: -8%;
+  }
+
+  .technology .score{
+    font-size: 12px;
+  }
+
+  .btn-request{
+    margin: 10px;
+  }
+
 }
+
+/*
+@media (max-width: 1200px) {
+
+  .technology .title{
+    font-size: 16px;
+    margin-right: -10%;
+  }
+
+  .technology .score{
+    font-size: 14px;
+  }
+
+}*/
