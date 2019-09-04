@@ -64,6 +64,12 @@ HEADER
     text-align: center;
 }
 
+.navbar-toggler:focus, .navbar-toggler:active, .navbar-toggler {
+    outline: none !important;
+    box-shadow: none !important;
+    border: none !important;
+  }
+
 
 /****
 
